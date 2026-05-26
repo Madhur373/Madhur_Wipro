@@ -1,0 +1,44 @@
+Synopsis – Question 1
+
+
+The program focuses on processing and transforming data using JavaScript functions and arrays.
+It takes input data, performs required operations using array methods, and generates a structured output.
+The solution uses conditional logic to validate and process values efficiently.
+Data is converted into JSON format for better readability and structured storage.
+The implementation demonstrates concepts such as arrays, objects, functions, loops, conditionals, and JSON handling.
+The main objective is to show proper data manipulation and clean program structure in JavaScript.
+
+
+
+Synopsis – Question 2: The E-Commerce Discount Applicator
+
+The program simulates a promo-code system for an e-commerce shopping cart.
+A callback function is used to identify products eligible for discounts based on category and price.
+Products belonging to the "Electronics" category with price greater than 200 receive a 10% discount.
+The program updates product details by reducing the price and adding an isDiscounted property.
+A summary message is displayed showing the number of discounted items and total savings.
+setTimeout() is used to simulate a delayed server-side calculation before returning the updated cart data.
+The implementation uses concepts such as callback functions, arrays, objects, map(), conditional statements, template literals, spread operator, and asynchronous programming with setTimeout().
+
+Synopsis – Question 3: The Movie Stream Analytics
+
+The program processes raw movie data received as strings from a streaming platform.
+Each string contains the movie name, genre, and view count separated using the | symbol.
+The data is converted into structured JavaScript objects with properties like name, genre, and views.
+Invalid or corrupted view counts are handled safely by assigning a default value of 0.
+Movies are filtered to include only the "Action" and "Sci-Fi" genres with more than 5000 views.
+The filtered movies are sorted in descending order based on view count.
+The final result is returned as a formatted JSON string.
+Concepts used include split(), map(), filter(), sort(), Number(), isNaN(), objects, arrays, destructuring, and JSON.stringify().
+
+Synopsis – Question 4: The Automated Payroll Processor
+
+The program simulates a payroll processing system for employees.
+A callback function is used to determine tax rates based on employee salary.
+Employees with salary greater than 5000 are taxed at 20%, while others are taxed at 10%.
+The payroll function calculates tax amount, net salary, and employee status.
+Employees with net salary above 4000 are assigned "Premium" status, while others receive "Standard" status.
+The program calculates the total net payout for all employees.
+A summary message is displayed using template literals.
+setTimeout() is used to simulate a server-side processing delay before returning the final processed employee data.
+Concepts used include callback functions, map(), template literals, ternary operators, objects, arrays, spread operator, and asynchronous programming using setTimeout().
