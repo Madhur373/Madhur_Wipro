@@ -1,0 +1,123 @@
+1. VARIABLES
+Variables store data values. Use 'let' for reassignable values and 'const' for fixed values.
+Example:
+let studentName = "Madhur";
+const batchYear = 2026;
+
+2. DATA TYPES
+Defines the type of data stored in memory.
+Example:
+let testerName = "Madhur";           // String
+let testCount = 45;                  // Number (integer)
+let successRate = 95.5;              // Number (decimal)
+let isTestPassed = true;             // Boolean
+
+3. OPERATORS
+Used for calculations and comparisons within test logic.
+Example:
+let x = 100;
+let y = 50;
+console.log(x + y);                  // Arithmetic: 150
+console.log(x > y);                  // Comparison: true
+
+4. ARRAYS
+Stores multiple values in a single variable, indexed from 0.
+Example:
+let automationTools = ["Playwright", "Selenium", "Cypress"];
+automationTools.push("Appium");      // Adds to end
+console.log(automationTools[0]);     // Index access: Playwright
+
+5. FUNCTIONS
+Reusable blocks of code that perform specific actions.
+Example:
+function calculateScore(a, b) {
+    return a + b;
+}
+console.log(calculateScore(80, 15));
+
+6. ARROW FUNCTIONS
+Modern, concise syntax for functions, heavily used in Playwright scripts.
+Example:
+const getGreeting = (name) => `Hello, ${name}`;
+console.log(getGreeting("Madhur"));
+
+7. TEMPLATE LITERALS
+Allows embedding variables directly into strings using backticks and ${}.
+Example:
+let role = "SDET";
+console.log(`Lead Name: ${studentName}, Role: ${role}`);
+
+8. TYPE CASTING
+Converting one data type into another (e.g., String to Number).
+Example:
+let stringVal = "500";
+let numericVal = Number(stringVal);
+console.log(numericVal + 100);       // 600
+
+9. CONDITIONAL STATEMENTS
+Directs the flow of execution based on boolean conditions.
+Example:
+let testStatus = "Fail";
+if (testStatus === "Pass") {
+    console.log("Proceed to Deployment");
+} else if (testStatus === "Fail") {
+    console.log("Trigger Re-run for Madhur");
+}
+
+10. LOOPS
+Repeats a block of code for a defined number of iterations.
+Example:
+for (let i = 1; i <= 3; i++) {
+    console.log(`Executing Test Case ID: ${i}`);
+}
+
+11. LOGICAL OPERATORS
+Used to combine multiple conditions (&&, ||, !).
+Example:
+let isManager = true;
+let hasAccess = true;
+if (isManager && hasAccess) {
+    console.log("Access Granted to Madhur's Dashboard");
+}
+
+12. MATH FUNCTIONS (FLOOR & CEIL)
+Used for rounding numbers to the nearest integer.
+Example:
+console.log(Math.floor(8.9));        // Rounds DOWN: 8
+console.log(Math.ceil(8.1));         // Rounds UP: 9
+
+13. ARRAY REDUCE METHOD
+Reduces an array to a single value (sum, object, or total count).
+Example:
+const bugPriority = [1, 2, 1, 3, 2];
+const bugCount = bugPriority.reduce((acc, current) => {
+    acc[current] = (acc[current] || 0) + 1;
+    return acc;
+}, {});
+
+14. ASYNCHRONOUS JAVASCRIPT (PROMISES & ASYNC/AWAIT)
+Crucial for Playwright automation to handle non-blocking actions.
+Example:
+async function runTest() {
+    console.log("Starting Test...");
+    // await fetchTestData(); 
+    console.log(`Execution complete for Madhur`);
+}
+
+15. OBJECT ORIENTED PROGRAMMING (OOPS)
+1) Encapsulation: Using # for private fields.
+2) Inheritance: Using 'extends' to share logic between Page Objects.
+3) Polymorphism: Overriding parent methods.
+4) Abstraction: Hiding implementation details from the test script.
+
+JavaScript API Fetching and Promise Chaining
+This document provides a concise overview of the concepts and functions used when interacting with public APIs using modern JavaScript.
+
+Core Definitions
+API Calling: The process of a client application sending a request to a remote server to retrieve or manipulate data.
+Fetch API: A modern, built-in JavaScript interface used to make network requests and handle responses across the web.
+Promise Chaining: A technique where multiple .then() methods are linked together to execute asynchronous operations in a specific sequential order.
+.json() Method: A function that parses the raw response from a fetch request and converts it into a usable JavaScript object or array.
+.filter() Function: An array method that creates a new array containing only the elements that meet a specific logical condition.
+.map() Function: An array method used to transform data by creating a new array where every element has been modified by a provided function.
+.catch() Block: A method used at the end of a promise chain to handle and manage any errors that occur during the request or processing.
