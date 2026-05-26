@@ -1,0 +1,57 @@
+These two terms are related but different:
+
+prototype
+
+This exists only on constructor functions or classes.
+It acts like a blueprint containing shared methods and properties that new objects can use.
+
+[[Prototype]]
+
+This is the hidden internal link inside every object instance.
+It points to the constructor’s prototype so the object can access shared functionality.
+
+In simple terms:
+
+prototype → the shared blueprint
+[[Prototype]] → the connection to that blueprint
+Why Prototypes Are Important
+1. Memory Efficiency
+
+Without prototypes, every object would store its own separate copy of methods.
+If millions of objects are created, millions of duplicate functions are also created.
+
+With prototypes, all objects share a single copy of a method.
+This saves a huge amount of memory.
+
+2. Live Updates
+
+When a method is added to a prototype later, all existing objects automatically gain access to it instantly.
+
+This makes updates flexible and powerful.
+
+3. Inheritance
+
+Prototypes make inheritance possible in JavaScript.
+
+A child object can inherit methods and properties from a parent object while also having its own unique features.
+
+This helps in code reuse and cleaner program structure.
+
+Constructor Methods vs Prototype Methods
+Methods Inside Constructor
+New copy created for every object
+Higher memory usage
+Slightly faster access
+Difficult to update globally
+Methods on Prototype
+One shared copy for all objects
+Much lower memory usage
+Slightly slower because JavaScript searches the prototype chain
+Easy to update for all objects instantly
+Easy Analogy
+
+Think of prototypes like a shared library in a school.
+
+Objects are students
+Methods are books
+Instead of every student buying the same book, everyone uses the shared library copy
